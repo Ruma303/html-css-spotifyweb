@@ -41,7 +41,7 @@ aside .spotify-logo {
 }
 
 .aside-top-menu img {
-    width: 2.5rem;
+    width: 2rem;
     aspect-ratio: 1/1;
 }
 
@@ -67,6 +67,15 @@ aside .spotify-logo {
     gap:0.3rem;
 }
 
+/* bordino verde a sinistra di home */
+
+.aside-top-menu li:first-child {
+    border-left: 3px solid rgb(140, 201, 55);
+    background-clip: padding-box;
+    padding: 0 1rem;
+    margin-left: -1rem ;
+}
+
 .aside-top-menu li:not(:first-child) {
     filter: brightness(50%);
 }
@@ -90,7 +99,7 @@ aside .spotify-logo {
     display: flex;
     align-items: center;
     font-weight: 500;
-    gap:0.8rem;
+    gap:1rem;
 }
 
 .aside-playlist h3 {
@@ -108,34 +117,41 @@ aside .spotify-logo {
     font-size: 1.5rem;
 }
 
-.download {
+.aside-download {
     display: flex;
     height: 100%;
     flex-direction:column;
     align-items: flex-start;
-    position: absolute;
-    top: 40rem;
-    left: 1rem;
+    margin-top: 19rem;
 }
 
-.download ul {
+.aside-download ul {
     display: flex;
     height: 100%;
     flex-direction:column;
     justify-content: center;
-    gap:0.5rem;
+    gap:1rem;
 }
 
-.download a {
+.aside-download a {
     display: flex;
     align-items: center;
     font-weight: 500;
     gap:0.3rem;
 }
 
-.download li:not(:last-child) {
+.aside-download hr {
+    width: 13rem;
+}
+
+.aside-download li:not(:last-child) {
     filter: brightness(50%);
 }
+
+.aside-download .fa-circle-user {
+    font-size: 1.7rem;
+}
+
 
 /* MAIN */
 
