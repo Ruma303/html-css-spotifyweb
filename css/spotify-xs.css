@@ -7,4 +7,8 @@
         background-color: aqua;
         width: calc(100vw - 5rem);
     }
+
+    main .top-container {
+        width: calc(100vw - 5rem);
+    }
 }
