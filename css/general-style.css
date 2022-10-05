@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color:white;
 }
+
+ul {
+    list-style:none;
+}
+
 
 /* ASIDE */
 
@@ -15,6 +22,49 @@ aside {
     top: 0;
     z-index: 999999999;
 }
+
+.aside-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+aside .spotify-logo {
+    width: 13rem;
+}
+
+.aside-top-menu img {
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+}
+
+.aside-top-menu {
+    display: flex;
+    height: 100%;
+    flex-direction:column;
+    align-items: flex-start;
+}
+
+.aside-top-menu ul {
+    display: flex;
+    height: 100%;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.aside-top-menu li {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap:0.3rem;
+}
+
+.aside-top-menu li:not(:first-child) {
+    filter: brightness(50%);
+}
+
+
 
 /* MAIN */
 
@@ -37,6 +87,8 @@ main .top-container {
     right: 0;
     z-index: 9999;
 }
+
+
 
 /* FOOTER */
 
