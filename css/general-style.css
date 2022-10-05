@@ -14,9 +14,9 @@ ul {
 /* ASIDE */
 
 aside {
-    width: 20rem;
+    width: 15rem;
     height: calc(100vh - 7rem);
-    background-color: purple;
+    background-color: black;
     position: fixed;
     left: 0;
     top: 0;
@@ -28,6 +28,8 @@ aside {
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
+    position: relative;
+    width: 100%;
 }
 
 aside a {
@@ -35,7 +37,7 @@ aside a {
 }
 
 aside .spotify-logo {
-    width: 13rem;
+    width: 10rem;
 }
 
 .aside-top-menu img {
@@ -106,10 +108,39 @@ aside .spotify-logo {
     font-size: 1.5rem;
 }
 
+.download {
+    display: flex;
+    height: 100%;
+    flex-direction:column;
+    align-items: flex-start;
+    position: absolute;
+    top: 40rem;
+    left: 1rem;
+}
+
+.download ul {
+    display: flex;
+    height: 100%;
+    flex-direction:column;
+    justify-content: center;
+    gap:0.5rem;
+}
+
+.download a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap:0.3rem;
+}
+
+.download li:not(:last-child) {
+    filter: brightness(50%);
+}
+
 /* MAIN */
 
 main {
-    width: calc(100vw - 20rem);
+    width: calc(100vw - 15rem);
     height: calc(100vh - 7rem);
     background-color: green;
     position: fixed;
@@ -118,7 +149,7 @@ main {
 }
 
 main .top-container {
-    width: calc(100vw - 20rem);
+    width: calc(100vw - 15rem);
     height: 7rem;
     background-color: black;
     opacity: 0.5;
