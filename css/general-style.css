@@ -30,6 +30,10 @@ aside {
     padding: 1rem;
 }
 
+aside a {
+    text-decoration: none;
+}
+
 aside .spotify-logo {
     width: 13rem;
 }
@@ -51,9 +55,10 @@ aside .spotify-logo {
     height: 100%;
     flex-direction:column;
     justify-content: center;
+    gap:0.5rem;
 }
 
-.aside-top-menu li {
+.aside-top-menu a {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -64,7 +69,42 @@ aside .spotify-logo {
     filter: brightness(50%);
 }
 
+.aside-playlist {
+    display: flex;
+    height: 100%;
+    flex-direction:column;
+    align-items: flex-start;
+}
 
+.aside-playlist ul {
+    display: flex;
+    height: 100%;
+    flex-direction:column;
+    justify-content: center;
+    gap:1rem;
+}
+
+.aside-playlist a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap:0.8rem;
+}
+
+.aside-playlist h3 {
+    text-transform: uppercase;
+}
+
+.aside-playlist li:not(:first-child) {
+    filter: brightness(50%);
+}
+
+.aside-playlist .fa-plus {
+    color: black;
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
 
 /* MAIN */
 
