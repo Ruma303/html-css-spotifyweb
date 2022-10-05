@@ -3,3 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ASIDE */
+
+aside {
+    width: 20rem;
+    height: calc(100vh - 7rem);
+    background-color: purple;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999;
+}
+
+/* MAIN */
+
+main {
+    width: calc(100vw - 20rem);
+    height: calc(100vh - 7rem);
+    background-color: green;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+/* FOOTER */
+
+footer {
+    height: 7rem;
+    background-color: brown;
+    position: fixed;
+    z-index: 999999999999999999999999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
