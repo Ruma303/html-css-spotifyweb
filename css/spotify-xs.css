@@ -1,0 +1,10 @@
+@media screen and (max-width: 552px) {
+    aside {
+        width: 5rem;
+    }
+   
+    main {
+        background-color: aqua;
+        width: calc(100vw - 5rem);
+    }
+}
