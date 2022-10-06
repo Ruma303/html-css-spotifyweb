@@ -1,5 +1,6 @@
 @media screen and (max-width: 876px) {
-    main {
-        background-color: gold;
+    main nav {
+        display: flex;
+        flex-wrap: wrap;
     }
 }

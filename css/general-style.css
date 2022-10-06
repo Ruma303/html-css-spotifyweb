@@ -180,6 +180,8 @@ main {
     right: 0;
     top: 0;
     overflow: auto;
+    background-color: rgb(27, 31, 39);
+
 }
 
 main .main-container {
@@ -305,7 +307,7 @@ section .card-container {
 
 .card h2 {
     font-size: 1rem;
- }
+}
 
 .card h5 {
     font-weight: 300;
@@ -317,6 +319,7 @@ section .card-container {
 .creato .card,
 .artisti .card {
     width: fit-content;
+    flex-basis: calc((100% - 5rem ) / 6);
 }
 
 .creato h1,
@@ -331,9 +334,6 @@ section .card-container {
     margin-top: 1rem
 }
 
-.creato img {
-    max-width: 100%;
-}
 
 .artisti {
     padding-bottom: 7rem;
@@ -354,6 +354,107 @@ footer {
     left: 0;
     right: 0;
 }
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.col-sx,
+.col-dx {
+    width: 15rem;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.col-sx .col-container,
+.col-dx .col-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.col-sx ul,
+.col-dx ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.col-sx img {
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.col-sx .author-container {
+    flex-grow: 2;
+}
+
+#author {
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+#song {
+    filter: brightness(50%);
+    font-size: 0.8rem;
+}
+
+.col-sx .fa-heart,
+.col-sx .fa-folder {
+    filter: brightness(50%);
+}
+
+.col-cx {
+    width: calc(100vw - 30rem);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.col-cx .col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+.col-cx .top-player ul,
+.col-cx .bottom-player ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.col-cx .top-player i {
+    font-size: 1.3rem;
+}
+
+.footer-container .range {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    /* background-color: green; */
+}
+
+#play {
+    font-size: 2rem;
+}
+
+#time-range {
+    width: 20rem;
+}
+
+#volume-range {
+    flex-grow: 3;
+}
+
 
 
 
