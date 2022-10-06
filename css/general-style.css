@@ -170,6 +170,8 @@ main .main-container {
     margin-top: 7rem;
 }
 
+/* MAIN TOP-BAR */
+
 main .top-bar-container {
     width: calc(100vw - 15rem);
     height: 7rem;
@@ -202,7 +204,7 @@ main .top-bar {
     border: solid white 3px;
     padding: 1rem 2rem;
     text-transform: uppercase;
-    opacity: 1;
+    /* opacity: 1; */
     /* filter: brightness(100%); */
 }
 
@@ -211,6 +213,7 @@ main .top-bar {
 main nav {
     display: flex;
     width: 100%;
+    margin: 0 auto;
 }
 
 nav .nav-container {
@@ -257,16 +260,21 @@ section .played-container {
 section .album-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
 }
 
 .album-container .album-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    max-width: 80%;
-    margin-left: -2rem;
+    justify-content: flex-start;
+    flex: 1 1 calc((100%  5rem) / 6);
 }
+
+/* 
+.album-card a {
+} */
 
 .album-card ul {
     display: flex;
@@ -278,9 +286,9 @@ section .album-container {
     text-align: center;
 }
 
-.album-card img {
+/* .album-card img {
     width: 80%;
-}
+} */
 
 .album-card h2 {
     font-size: 1.3rem;
@@ -303,3 +311,15 @@ footer {
     left: 0;
     right: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* COMPORTAMENTO HOVER */
