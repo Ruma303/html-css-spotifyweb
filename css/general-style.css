@@ -185,8 +185,7 @@ main {
 main .main-container {
     height: 100%;
     width: 100%;
-    /* display: flex; */
-    margin-top: 7rem;
+    padding: 7rem 0;
 }
 
 /* MAIN TOP-BAR */
@@ -269,7 +268,7 @@ section .section-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 2rem 1rem;
+    margin: 3rem 1rem;
 }
 
 section .section-title {
@@ -313,20 +312,36 @@ section .card-container {
     filter: brightness(50%);
 }
 
-/* SECTION CREATO PER JHON DOE */
+/* SECTION CREATO PER JHON DOE + ARTISTI */
 
-.creato .card {
+.creato .card,
+.artisti .card {
     width: fit-content;
 }
 
-.creato h1{
+.creato h1,
+.artisti h1 {
     font-size: 1.5rem;
 }
 
-.creato img {
-    max-width: 50%;
+.creato .section-title h2, 
+.artisti .section-title h2 {
+    font-size: 0.8rem;
+    color: rgb(121, 123, 128);
+    margin-top: 1rem
 }
 
+.creato img {
+    max-width: 100%;
+}
+
+.artisti {
+    padding-bottom: 7rem;
+}
+
+.artisti img {
+    clip-path: circle(closest-side at center);
+}
 
 /* FOOTER */
 
