@@ -43,7 +43,6 @@
     /* MAIN */
    
     main {
-        background-color: aqua;
         width: calc(100vw - 3rem);
         left: 3rem;
 
