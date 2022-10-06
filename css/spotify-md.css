@@ -14,7 +14,6 @@
     }
 
     .card-container .card {
-        /* flex: 0 1 25%; */
         flex-basis: calc((100% / 4) - (3rem / 4));
     }
 
