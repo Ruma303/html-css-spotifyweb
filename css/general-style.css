@@ -283,8 +283,8 @@ section .section-title {
 
 section .card-container {
     display: flex;
-    gap: 1rem;
     max-width: 100%;
+    gap:1rem;
 }
 
 .card-container .card {
@@ -294,6 +294,7 @@ section .card-container {
     justify-content: center;
     height: 100%;
     max-width: 100%;
+    /* padding: 0 1rem; */
 }
 
 .card ul {

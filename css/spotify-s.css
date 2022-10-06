@@ -1,8 +1,7 @@
 @media screen and (max-width: 639px) {
-    /* main {
-
-    } */
-
+    .card-container .card {
+        flex-basis: calc((100% / 2) - (1rem / 2));
+    }
 
 
 

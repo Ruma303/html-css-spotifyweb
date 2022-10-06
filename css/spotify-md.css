@@ -1,18 +1,22 @@
 @media screen and (max-width: 876px) {
+    
+    /* NAV */
+    
     nav .nav-container ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-
+    /* MAIN */
+    
     section .card-container {
         flex-wrap: wrap;
     }
 
     .card-container .card {
-        flex: 1 1 calc((100% - 3rem / 4));
+        /* flex: 0 1 25%; */
+        flex-basis: calc((100% / 4) - (3rem / 4));
     }
-
 
 
 
