@@ -1,6 +1,6 @@
 @media screen and (min-width: 877px) {
     main {
-        background-color: darkorange;
+        background-color: rgb(27, 31, 39);
         max-width: calc(1440px - 15rem);
         left:15rem;
     }
