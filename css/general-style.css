@@ -264,7 +264,7 @@ section .album-container {
     width: 100%;
 }
 
-.album-container .album-card {
+.album-container .card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -273,28 +273,28 @@ section .album-container {
 }
 
 /* 
-.album-card a {
+.card a {
 } */
 
-.album-card ul {
+.card ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.album-card li {
+.card li {
     text-align: center;
 }
 
-/* .album-card img {
+/* .card img {
     width: 80%;
 } */
 
-.album-card h2 {
+.card h2 {
     font-size: 1.3rem;
  }
 
-.album-card h5 {
+.card h5 {
     font-weight: 300;
     filter: brightness(50%);
 }
