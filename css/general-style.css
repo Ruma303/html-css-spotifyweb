@@ -394,6 +394,13 @@ footer .footer-container {
 
 .col-sx .author-container {
     flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-sx .bottom-ico {
+    display: flex;
+    gap: 1rem;
 }
 
 #author {

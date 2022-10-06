@@ -12,8 +12,43 @@
         flex: 1 1 calc((100% - 3rem / 4));
     }
 
-    /* .card img {
-        max-width: 40%;
+
+
+
+
+
+    /* FOOTER */
+
+    .col-sx .bottom-ico  {
+         flex-direction: column;
+         gap: 0.3rem;
     }
-     */
+
+    .col-cx .top-player i {
+        font-size: 1rem;
+    }
+
+    .col-cx .bottom-player ul {
+        gap: 1rem;
+    }
+
+    #play {
+        font-size: 1.8rem;
+    }
+
+    #time-range {
+        width: 15rem;
+    }
+
+    .col-cx .bottom-player span {
+        font-size: 0.8rem;
+    }
+
+    .col-dx i {
+        font-size: 0.8rem;
+    }
+
+    
+    
+    
 }
