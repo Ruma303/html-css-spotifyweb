@@ -315,16 +315,16 @@ section .card-container {
 
 /* SECTION CREATO PER JHON DOE */
 
-.creato h1{
-    font-size: 1.5rem;
-}
-
 .creato .card {
     width: fit-content;
 }
 
+.creato h1{
+    font-size: 1.5rem;
+}
+
 .creato img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 
