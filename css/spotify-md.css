@@ -1,7 +1,8 @@
 @media screen and (max-width: 876px) {
-    nav .nav-container{
+    nav .nav-container ul{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     section .card-container {
