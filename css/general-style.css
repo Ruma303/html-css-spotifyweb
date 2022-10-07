@@ -390,13 +390,13 @@ footer .footer-container {
 
 .col-sx,
 .col-dx {
-    flex: 1 1 calc((25%) - 2rem);
+    flex: 1 1 calc((15%) - 2rem);
     height: 100%;
     display: flex;
 }
 
 .col-cx {
-    flex: 1 1 calc(50%);
+    flex: 1 1 calc(70%);
     height: 100%;
     margin: 0 auto;
 }
@@ -477,7 +477,7 @@ footer .footer-container {
 }
 
 .col-cx .bottom-player {
-    max-width: 500px;
+    max-width: 700px;
     width: 100%;
 }
 
@@ -520,6 +520,7 @@ footer .footer-container {
 
 .col-dx {
     justify-content: flex-end;
+    max-width: 260px;
 }
 
 .col-dx .col-container {
@@ -551,14 +552,14 @@ footer .footer-container {
 }
 
 .col-dx .volume-top-bar{
-    width: 20%;
+    width: 50%;
     height: 6px;
     background-color: rgb(191, 191, 192);
     border-radius: 20rem;
     z-index: 2;
     position: absolute;
-    left: -0.2rem;
-    top:-0.2rem;
+    left: 0;
+    top:0;
     display: flex;
     justify-content: flex-end;
 }
