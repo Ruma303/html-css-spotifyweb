@@ -523,8 +523,17 @@ footer .footer-container {
 }
 
 .col-dx .col-container {
+    /* background-color: red; */
     width: 100%;
     flex-grow: 1;
+}
+
+.col-dx ul {
+    width: 100%;
+}
+
+.col-dx .volume-class {
+    width: 100%;
 }
 
 .col-dx .volume-bar {
