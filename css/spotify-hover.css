@@ -25,9 +25,8 @@ main img:hover {
     filter:brightness(50%);
 }
 
-.card .hover-play:hover {
-    display: block;
-    z-index: 10;
+.card img:hover {
+    z-index:9;
 }
 
 #play:hover {
