@@ -23,35 +23,48 @@
 
     /* FOOTER */
 
+    .col-sx,
+    .col-dx {
+        flex-basis: calc((30%) - 2rem);
+    }
+
+    .col-cx {
+        flex-basis: 40%;
+    }
+
+    .col-sx,
+    .col-dx {
+        max-width: 100%;
+    }
+
     .col-sx .bottom-ico  {
-         flex-direction: column;
-         gap: 0.3rem;
+         gap: 1rem;
     }
 
     .col-cx .top-player i {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
-
+    
+    .col-cx .top-player ul,
     .col-cx .bottom-player ul {
-        gap: 1rem;
+        gap: 1.5rem;
     }
-
-    #play {
-        font-size: 1.8rem;
-    }
-
-    #time-range {
-        width: 15rem;
-    }
-
+    
     .col-cx .bottom-player span {
         font-size: 0.8rem;
     }
-
+    
+    #play{
+        font-size: 2rem;
+    }
+    
     .col-dx i {
         font-size: 0.8rem;
     }
-
+    
+    .col-cx .bottom-player {
+    max-width: 400px;
+    }
     
     
     
