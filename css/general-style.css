@@ -514,19 +514,15 @@ footer .footer-container {
     z-index: 0;
     position: absolute;
     top:-4px;
-    /* display: none; */
 }
 
 /* COLONNA DESTRA */
 
 .col-dx {
     justify-content: flex-end;
-    /* width: 100%; */
-    /* width: 500px; */
 }
 
 .col-dx .col-container {
-    max-width: 15vw;
     width: 100%;
     flex-grow: 1;
 }
@@ -567,6 +563,5 @@ footer .footer-container {
     z-index: 0;
     position: absolute;
     top:-4px;
-    /* display: none; */
 }
 
