@@ -410,6 +410,7 @@ footer .footer-container {
     align-items: center;
     height: 100%;
     gap: 1rem;
+    /* width: 100%; */
 }
 
 .col-sx ul,
@@ -429,6 +430,7 @@ footer .footer-container {
     flex-grow: 2;
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
 }
 
 .col-sx .bottom-ico {
@@ -451,6 +453,11 @@ footer .footer-container {
     filter: brightness(50%);
 }
 
+.col-cx .bottom-player {
+    width: 100%;
+    /* text-align: center; */
+}
+
 .col-cx .top-player ul,
 .col-cx .bottom-player ul {
     display: flex;
@@ -460,12 +467,14 @@ footer .footer-container {
 }
 
 .col-cx .bottom-player li {
-    flex-basis: calc((100% / 3) - (4rem / 3));
+    /* flex-basis: calc((100% / 3) - (4rem / 3)); */
+    /* flex-basis: calc((100% - 2 * 2rem) / 3); */
+    flex-grow: 1;
 }
 
 .bottom-player .player-bar {
-    flex-grow: 10;
-    /* width: 20rem; */
+    /* flex-grow: 1; */
+    /* width: 20%; */
     border: 3px solid rgb(90, 90, 91);
     border-radius: 20rem;
     z-index: 1;
@@ -480,11 +489,7 @@ footer .footer-container {
     font-size: 1.3rem;
 }
 
-/* .bottom-player .player-bar {
-    flex-basis: 33%;
-} */
-
-.bottom-player .played-bar {
+/* .bottom-player .played-bar {
     width: 10rem;
     border: 3px solid rgb(191, 191, 192);
     border-radius: 20rem;
@@ -492,7 +497,7 @@ footer .footer-container {
     position: absolute;
     left: -0.2rem;
     top:-0.2rem;
-}
+} */
 
 .bottom-player .played-bar .scroll-ball {
     width: 1rem;
@@ -504,7 +509,7 @@ footer .footer-container {
     position: absolute;
     left: 9rem;
     top:-0.5rem;
-    /* display: none; */
+    display: none;
 }
 
 .col-dx .col-container .volume-bar {
