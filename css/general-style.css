@@ -390,13 +390,13 @@ footer .footer-container {
 
 .col-sx,
 .col-dx {
-    flex: 1 1 calc((15%) - 2rem);
+    flex: 1 1 calc((25%) - 2rem);
     height: 100%;
     display: flex;
 }
 
 .col-cx {
-    flex: 1 1 calc(70%);
+    flex: 1 1 calc(50%);
     height: 100%;
     margin: 0 auto;
 }
