@@ -17,10 +17,6 @@
         flex-basis: calc((100% / 4) - (3rem / 4));
     }
 
-
-
-
-
     /* FOOTER */
 
     .col-sx,
@@ -65,7 +61,5 @@
     .col-cx .bottom-player {
     max-width: 400px;
     }
-    
-    
     
 }

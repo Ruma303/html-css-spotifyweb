@@ -6,10 +6,6 @@
     color:white;
 }
 
-:root {
-    --pallina: 5;
-}
-
 ul {
     list-style:none;
 }
@@ -22,7 +18,7 @@ a {
 
 aside {
     width: 15rem;
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 5rem);
     background-color: black;
     position: fixed;
     left: 0;
@@ -183,7 +179,7 @@ aside .spotify-logo {
 
 main {
     width: calc(100% - 15rem);
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 5rem);
     position: relative;
     left: 15rem;
     top: 0;
@@ -265,15 +261,18 @@ nav ul {
 .nav-container li {
     white-space: nowrap;
     filter: brightness(50%);
-    padding: 0.6rem;
+    padding: 0.85em;
     font-size: 0.8rem;
+}
+
+nav a {
+    font-size: 0.9rem;
 }
 
 main nav li:first-child {
     border-bottom: 3px solid rgb(140, 201, 55);
     background-clip: padding-box;
     padding-bottom: 0.1rem ;
-    /* width: 30px; */
 }    
 
 /* PRIMA SECTION - RECENTLY PLAYED */
@@ -306,11 +305,14 @@ section .card-container {
 }
 
 .card ul {
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+}
+
+.card li {
+    position: relative;
 }
 
 .card img {
@@ -321,7 +323,7 @@ section .card-container {
 
 .card .hover-play {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.5rem;
@@ -369,7 +371,7 @@ section .card-container {
 /* FOOTER */
 
 footer {
-    height: 7rem;
+    height: 5rem;
     background-color: rgb(40, 40, 40);
     position: fixed;
     z-index: 999999999999999999999999;
@@ -395,6 +397,10 @@ footer .footer-container {
     display: flex;
 }
 
+.col-sx {
+    max-width: 260px;
+}
+
 .col-cx {
     flex: 1 1 calc(50%);
     height: 100%;
@@ -415,7 +421,8 @@ footer .footer-container {
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 1rem;
+    gap: 0.5rem;
+    padding: 1rem auto;
 }
 
 .col-sx ul,
@@ -452,6 +459,7 @@ footer .footer-container {
 #song {
     filter: brightness(50%);
     font-size: 0.8rem;
+    white-space: nowrap;
 }
 
 .col-sx .fa-heart,
@@ -460,7 +468,7 @@ footer .footer-container {
 }
 
 #play {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /* COLONNA CENTRALE */
@@ -488,7 +496,7 @@ footer .footer-container {
 .bottom-player .player-bar {
     border: 3px solid rgb(90, 90, 91);
     border-radius: 20rem;
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 
@@ -497,7 +505,7 @@ footer .footer-container {
     height: 6px;
     background-color: rgb(191, 191, 192);
     border-radius: 20rem;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     left: -0.2rem;
     top:-0.2rem;
@@ -511,7 +519,7 @@ footer .footer-container {
     background-color:white;
     padding: 3px;
     border-radius: 50rem;
-    z-index: 0;
+    z-index: 1;
     position: absolute;
     top:-4px;
 }
@@ -524,7 +532,6 @@ footer .footer-container {
 }
 
 .col-dx .col-container {
-    /* background-color: red; */
     width: 100%;
     flex-grow: 1;
 }
@@ -546,7 +553,7 @@ footer .footer-container {
     background-color: rgb(90, 90, 91);
     height: 6px;
     border-radius: 20rem;
-    z-index: 1;
+    z-index: 10;
     position: relative;
     width: 100%;
 }
@@ -556,7 +563,7 @@ footer .footer-container {
     height: 6px;
     background-color: rgb(191, 191, 192);
     border-radius: 20rem;
-    z-index: 2;
+    z-index: 10;
     position: absolute;
     left: 0;
     top:0;

@@ -3,10 +3,42 @@
         flex-basis: calc((100% / 2) - (1rem / 2));
     }
 
-
-
-    #time-range {
-        width: 10rem;
+    main nav {
+        margin-top: 1rem;
     }
 
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    .col-sx .bottom-ico  {
+        flex-direction: column;
+        gap: 0.3rem;
+   }
+
+   .col-sx,
+   .col-dx {
+       flex-basis: calc((35%) - 2rem);
+   }
+
+   .col-cx {
+       flex-basis: 35%;
+   }
+
+    .col-cx .bottom-player {
+        max-width: 350px;
+    }
+    
+    .col-cx .bottom-player span {
+        font-size: 0.6rem;
+    }
+    
+    .col-cx .top-player i {
+        font-size: 1.3rem;
+    }
+    
+    .col-cx .top-player ul,
+    .col-cx .bottom-player ul {
+        gap: 1rem;
+    }
 }

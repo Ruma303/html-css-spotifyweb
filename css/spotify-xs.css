@@ -37,9 +37,6 @@
     }
 
 
-
-
-
     /* MAIN */
    
     main {
@@ -52,5 +49,36 @@
     }
 
     /* FOOTER */
+
+
+
+    .col-sx,
+   .col-dx,
+   .col-cx {
+       flex-basis: calc((30%) - 2rem);
+   }
+
+   .col-sx ul,
+    .col-dx ul { 
+    gap: 0.5rem;
+}
+
+   .col-sx,
+   .col-dx {
+    max-width: 25%;
+   }
+
+   .col-cx .bottom-player {
+    max-width: 200px;
+    }
+
+   #author {
+    font-size: 0.9rem;
+   }
+
+   #song {
+    font-size: 0.6rem;
+    white-space: wrap;
+   }
 
 }
