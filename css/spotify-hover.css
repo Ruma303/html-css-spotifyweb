@@ -26,7 +26,7 @@ main img:hover {
 }
 
 .card img:hover {
-    z-index:9;
+    z-index:-1;
 }
 
 #play:hover {
@@ -35,9 +35,13 @@ main img:hover {
 
 .bottom-player .played-bar:hover,
 .col-dx .col-container .volume-top-bar:hover {
-    border: 3px solid rgb(181, 224, 84);
+    background-color: rgb(181, 224, 84);
     cursor: pointer;
 }
+
+/* .bottom-player li:nth-child(2):hover {
+    z-index: var(--pallina);
+} */
 
 /* .bottom-player .played-bar .scroll-ball:hover {
     display: block;
