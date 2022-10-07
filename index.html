@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/general-style.css">
-    <link rel="stylesheet" href="css/spotify-lg.css">
+    <link rel="stylesheet" href="css/spotify-hover.css">
     <link rel="stylesheet" href="css/spotify-md.css">
     <link rel="stylesheet" href="css/spotify-s.css">
     <link rel="stylesheet" href="css/spotify-xs.css">
@@ -88,7 +88,9 @@
                         <div class="card">
                             <a href="#!">
                                 <ul>  
-                                    <li><img src="img/metal_lifting.jpg" alt=""></li>
+                                    <li><img src="img/metal_lifting.jpg" alt="">
+                                        <i class="fa-regular fa-circle-play hover-play"></i>
+                                    </li>
                                     <li><h2>Heavy Metal</h2></li>
                                     <li><h5>Subtitle</h5></li>
                                 </ul>
@@ -231,7 +233,13 @@
                     <div class="bottom-player">
                         <ul>
                             <li><span>0:25</span></li>
-                            <li><input type="range" class="range" min="0:00" max="4:35" value="1" id="time-range"></li>
+                            <li>
+                                <div class="player-bar">
+                                    <div class="played-bar">
+                                        <div class="scroll-ball"></div>
+                                    </div>
+                                </div>
+                            </li>
                             <li><span>4:35</span></li>
                         </ul>
                     </div>
@@ -243,8 +251,13 @@
                         <li><a href="#!"><i class="fa-solid fa-list-ul"></i></a></li>
                         <li><a href="#!"><i class="fa-solid fa-desktop"></i></a></li>
                         <li><a href="#!"><i class="fa-solid fa-volume-high"></i></a></li>
-                        <li><input type="range" class="range" min="0" max="100" value="2"
-                            id="volume-range"></li>
+                        <li>
+                            <div class="volume-bar">
+                                <div class="volume-top-bar">
+                                    <div class="scroll-ball-volume"></div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>

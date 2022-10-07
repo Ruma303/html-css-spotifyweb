@@ -1,0 +1,45 @@
+/* COMPORTAMENTI HOVER */
+
+.nav-container li:hover,
+.aside-top-menu li:hover,
+.aside-playlist li:hover,
+.aside-bottom li:hover,
+.card h5:hover,
+.col-sx .fa-heart:hover,
+.col-sx .fa-folder:hover,
+#song:hover{
+    filter: brightness(100%);
+}
+
+#song:hover,
+.card h5:hover{
+    text-decoration: underline;
+}
+
+.top-bar a:hover {
+    scale: 120%;
+    cursor: pointer;
+}
+
+main img:hover {
+    filter:brightness(50%);
+}
+
+.card .hover-play:hover {
+    display: block;
+    z-index: 10;
+}
+
+#play:hover {
+    scale: 120%;
+}
+
+.bottom-player .played-bar:hover,
+.col-dx .col-container .volume-top-bar:hover {
+    border: 3px solid rgb(181, 224, 84);
+    cursor: pointer;
+}
+
+/* .bottom-player .played-bar .scroll-ball:hover {
+    display: block;
+} */

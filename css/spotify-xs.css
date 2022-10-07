@@ -45,14 +45,11 @@
     main {
         width: calc(100vw - 3rem);
         left: 3rem;
-
     }
 
-    /* main .top-container {
+    main .top-bar-container {
         width: calc(100vw - 3rem);
-        left: 5rem;
-    } */
-
+    }
 
     /* FOOTER */
 

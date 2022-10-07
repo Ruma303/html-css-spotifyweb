@@ -240,7 +240,8 @@ main .top-bar {
 main nav {
     display: flex;
     width: 100%;
-    margin: 0 auto;
+    margin: auto auto;
+    padding: 0 2rem;
 }
 
 nav .nav-container {
@@ -249,7 +250,7 @@ nav .nav-container {
     justify-content: center;
     max-width: 100%;
     height: 3rem;
-    margin: 0 auto;
+    margin: 1rem auto;
 }    
 
 nav ul {
@@ -257,7 +258,7 @@ nav ul {
     text-transform: uppercase;
 } 
 
-main nav li {
+.nav-container li {
     white-space: nowrap;
     filter: brightness(50%);
     padding: 0.6rem;
@@ -277,7 +278,7 @@ section .section-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 3rem 1rem;
+    margin: 2rem 1rem;
 }
 
 section .section-title {
@@ -298,10 +299,10 @@ section .card-container {
     height: 100%;
     max-width: 100%;
     flex-basis: calc((100% / 6) - (5rem / 6));
-
 }
 
 .card ul {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -310,6 +311,16 @@ section .card-container {
 
 .card img {
     max-width: 100%;
+    z-index:0;
+}
+
+.card .hover-play {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    display: none;
 }
 
 .card h2 {
@@ -338,7 +349,7 @@ section .card-container {
 .artisti .section-title h2 {
     font-size: 0.8rem;
     color: rgb(121, 123, 128);
-    margin-top: 1rem
+    margin-top: 1rem;
 }
 
 
@@ -375,6 +386,7 @@ footer .footer-container {
     width: 15rem;
     height: 100%;
     padding: 0 1rem;
+    display: flex;
 }
 
 .col-sx .col-container,
@@ -390,6 +402,7 @@ footer .footer-container {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    flex: 1 1 calc((100% / 4) - (3rem / 4));
 }
 
 .col-sx img {
@@ -436,6 +449,7 @@ footer .footer-container {
     align-items: center;
     height: 100%;
     gap: 1rem;
+    flex: 1 1 calc((100% / 4) - (3rem / 4));
 }
 
 .col-cx .top-player ul,
@@ -446,38 +460,84 @@ footer .footer-container {
     gap: 2rem;
 }
 
-.col-cx .top-player i {
-    font-size: 1.3rem;
+.col-cx .top-player li {
+    flex: 1 1 calc((100% / 5) - (8rem / 5));
 }
 
-.footer-container .range {
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    /* background-color: green; */
+.col-cx .bottom-player li {
+    flex: 1 1 calc((100% / 3) - (4rem / 3));
 }
+
 
 #play {
     font-size: 2rem;
 }
 
-#time-range {
+.col-cx .top-player i {
+    font-size: 1.3rem;
+}
+
+.bottom-player .player-bar {
     width: 20rem;
+    border: 3px solid rgb(90, 90, 91);
+    border-radius: 20rem;
+    z-index: 1;
+    position: relative;
 }
 
-#volume-range {
-    flex-grow: 3;
+.bottom-player .played-bar {
+    width: 10rem;
+    border: 3px solid rgb(191, 191, 192);
+    border-radius: 20rem;
+    z-index: 2;
+    position: absolute;
+    left: -0.2rem;
+    top:-0.2rem;
+}
+
+.bottom-player .played-bar .scroll-ball {
+    width: 1rem;
+    height: 1rem;
+    background-color:white;
+    padding: 3px;
+    border-radius: 50rem;
+    z-index: 3;
+    position: absolute;
+    left: 9rem;
+    top:-0.5rem;
+    /* display: none; */
+}
+
+.col-dx .col-container .volume-bar {
+    flex-grow: 4;
+    width: 7rem;
+    border: 3px solid rgb(90, 90, 91);
+    border-radius: 20rem;
+    z-index: 1;
+    position: relative;
+}
+
+.col-dx .col-container .volume-top-bar {
+    width: 4rem;
+    border: 3px solid rgb(191, 191, 192);
+    border-radius: 20rem;
+    z-index: 2;
+    position: absolute;
+    left: -0.2rem;
+    top:-0.2rem;
+}
+
+.volue-bar .scroll-bar-volume {
+    width: 1rem;
+    height: 1rem;
+    background-color:red;
+    padding: 3px;
+    border-radius: 50rem;
+    z-index: 3;
+    position: absolute;
+    left: 1rem; 
+    top:-0.5rem;
+    /* display: none; */
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* COMPORTAMENTO HOVER */
